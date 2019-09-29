@@ -18,36 +18,13 @@ public class move : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.D))
         {
-            if (KeyInputCheck == 0)
-            {
-                KeyInputCheck = 1;
-                RightLeftDistinction = 1;
-            }
+            transform.Translate(1, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            if (KeyInputCheck == 0)
-            {
-                KeyInputCheck = 1;
-                RightLeftDistinction = -1;
-            }
-        }
-
-        if (KeyInputCheck == 1)
-        {
-            KeyInputCheck = 0;
-            rb.freezeRotation = true;
-            InvokeRepeating("GrowMove", 0, 0.001f);
+            transform.Translate(-1, 0, 0);
         }
 
     }
-
-    void GrowMove()
-    {
-        transform.position += new Vector3(RightLeftDistinction * MoveSpeed, 0, 0);//이동
-        //transform.position += new Vector3(-RightLeftDistinction *0.00001f *BoxRotation*(-30*BoxRotation+1)*1.059378145028868f, 0, 0);
-
-    }
-
 }
