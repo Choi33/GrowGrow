@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class move : MonoBehaviour {
 
-    float MoveSpeed = 0.02f;
+    float MoveSpeed = 0.1f;
     int KeyInputCheck = 0;
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
@@ -16,14 +16,14 @@ public class move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(1, 0, 0);
+            transform.Translate(1*MoveSpeed, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-1, 0, 0);
+            transform.Translate(-1*MoveSpeed, 0, 0);
         }
 
     }
