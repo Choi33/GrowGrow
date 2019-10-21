@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameSun : MonoBehaviour {
+public class SceneChange : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class GameSun : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButton(0))
         {
-            SceneManager.LoadScene("move");
+            SceneManager.LoadScene("Game");
         }
 	}
 }
