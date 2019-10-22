@@ -232,15 +232,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AppleGenerator.cs" />
     <Compile Include="Assets\DropApple.cs" />
     <Compile Include="Assets\GrowGageUI.cs" />
     <Compile Include="Assets\move.cs" />
     <Compile Include="Assets\Problem.cs" />
     <Compile Include="Assets\SceneChange.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\problem.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
