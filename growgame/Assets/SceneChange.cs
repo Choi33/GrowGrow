@@ -14,7 +14,7 @@ public class SceneChange : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButton(0))
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Loading");
         }
 	}
 }
