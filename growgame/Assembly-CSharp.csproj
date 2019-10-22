@@ -51,9 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameSun.cs" />
+     <Compile Include="Assets\DropApple.cs" />
      <Compile Include="Assets\GrowGageUI.cs" />
+     <Compile Include="Assets\LoadingSceneManager.cs" />
      <Compile Include="Assets\move.cs" />
+     <Compile Include="Assets\Problem.cs" />
+     <Compile Include="Assets\SceneChange.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
