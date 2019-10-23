@@ -16,7 +16,7 @@ public class ApplePrefab : MonoBehaviour {
             this.delta = 0;
             GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
             int px = Random.Range(-6, 2);
-            go.transform.position = new Vector3(px, 7, 0);;
+            go.transform.position = new Vector3(px, 7, 0);
         }
 	}
 

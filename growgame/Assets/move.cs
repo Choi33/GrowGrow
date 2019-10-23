@@ -36,7 +36,7 @@ public class move : MonoBehaviour {
         {
             count++;
             PlayerPrefs.SetInt("Count", count);
-            Debug.Log("안녕");
+            Debug.Log(count);
 
         }
     }
