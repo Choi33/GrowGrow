@@ -9,6 +9,8 @@ public class move : MonoBehaviour {
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
 
+    public int count = 0;
+
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -26,5 +28,15 @@ public class move : MonoBehaviour {
             transform.Translate(-1*MoveSpeed, 0, 0);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "apple")
+        {
+            count++;
+            Debug.Log("안녕");
+
+        }
     }
 }

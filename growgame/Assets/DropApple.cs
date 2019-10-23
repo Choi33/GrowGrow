@@ -6,6 +6,8 @@ public class DropApple : MonoBehaviour {
 
     GameObject soil_shoot;
 
+    public int count = 0;
+
 	// Use this for initialization
 	void Start () {
         this.soil_shoot = GameObject.Find("soil_shoot");
@@ -31,6 +33,8 @@ public class DropApple : MonoBehaviour {
         if (d < r1 + r2)
         {
             Destroy(gameObject);
+            count++;
         }
-	}
+    }
+
 }
