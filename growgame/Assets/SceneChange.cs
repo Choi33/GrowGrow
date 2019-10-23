@@ -5,8 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip Clip;
+    SoundManager SM;
+
+    // Use this for initialization
+    private void Awake()
+    {
+        SM = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -14,6 +23,7 @@ public class SceneChange : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButton(0))
         {
+            SM.Play(Clip);
             SceneManager.LoadScene("Loading");
         }
 	}
