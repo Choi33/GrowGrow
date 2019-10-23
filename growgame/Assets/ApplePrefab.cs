@@ -7,7 +7,6 @@ public class ApplePrefab : MonoBehaviour {
     public GameObject[] applePrefab;
     float span = 1.0f;
     float delta = 0;
-    public int count = 0;
 
     // Update is called once per frame
     void Update () {

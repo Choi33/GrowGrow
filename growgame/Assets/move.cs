@@ -8,12 +8,12 @@ public class move : MonoBehaviour {
     int KeyInputCheck = 0;
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
-
-    public int count = 0;
+    int count = 0;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
+        PlayerPrefs.SetInt("Count", 0);
     }
 	
 	// Update is called once per frame
@@ -35,6 +35,7 @@ public class move : MonoBehaviour {
         if (collision.tag == "apple")
         {
             count++;
+            PlayerPrefs.SetInt("Count", count);
             Debug.Log("안녕");
 
         }
