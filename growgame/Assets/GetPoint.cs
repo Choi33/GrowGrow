@@ -11,8 +11,7 @@ public class GetPoint : MonoBehaviour {
 
     void Awake()
     {
-        if (!instance) //정적으로 자신을 체크합니다.
-            instance = this; //정적으로 자신을 저장합니다.
+       
     }
 
     // Use this for initialization
@@ -24,7 +23,6 @@ public class GetPoint : MonoBehaviour {
 
     public void AddPoint(int num)
     {
-        point += num;
         PrintpPoint.text = "점수 : " + point;
     }
 	
