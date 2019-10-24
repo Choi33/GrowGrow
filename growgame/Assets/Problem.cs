@@ -42,16 +42,32 @@ public class Problem : MonoBehaviour {
  
 
     public Text queText;
+    public int num=0;
+    public move move;
 
+    void Awake()
+    {
+        move=GameObject.Find("soil_shoot").GetComponent<move>();
+    }
 
     // Use this for initialization
     void Start () {
-          
-	}
+        queText.GetComponent<Text>().text = que[0, 1];
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        int temp = num;
+        num = move.Getcount();
+        //Debug.Log(num);
+        
 
-        queText.GetComponent<Text>().text = que[0, 1];
+
+        if (num != temp)
+        {
+            queText.GetComponent<Text>().text = que[num, 1];
+        }
+        
 	}
 }

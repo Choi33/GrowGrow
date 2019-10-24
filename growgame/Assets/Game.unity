@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1f1959a8219c34e86f734c967e7433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!61 &371657043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -492,6 +493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   queText: {fileID: 1517383035}
+  num: 0
+  move: {fileID: 0}
 --- !u!4 &911216257
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1941835278
 MonoBehaviour:
   m_ObjectHideFlags: 0

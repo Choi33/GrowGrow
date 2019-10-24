@@ -8,7 +8,7 @@ public class move : MonoBehaviour {
     int KeyInputCheck = 0;
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
-    int count = 0;
+    public int count = 0;
 
     // Use this for initialization
     void Start () {
@@ -36,8 +36,13 @@ public class move : MonoBehaviour {
         {
             count++;
             PlayerPrefs.SetInt("Count", count);
-            Debug.Log(count);
+            //Debug.Log(count);
 
         }
+    }
+
+    public int Getcount()
+    {
+        return count;
     }
 }
