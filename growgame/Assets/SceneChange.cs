@@ -6,20 +6,21 @@ using System.Threading;
 
 public class SceneChange : MonoBehaviour {
 
-    public AudioClip Clip;
-    SoundManager SM;
+    //public AudioClip Clip;
+    //SoundManager SM;
     //public GameObject Button;
 
     // Use this for initialization
     private void Awake()
     {
-        SM = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //SM = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     public void OnClick()
     {
-        SM.Play(Clip);
-        //SceneManager.LoadScene("Loading");
+        //SM.Play(Clip);
+        GetComponent<AudioSource>().Play();
+        SceneManager.LoadScene("Loading");
     }
 
     // Use this for initialization
