@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 73fc9df510b544b4297ccf5f47d6bb74, type: 3}
+  Button: {fileID: 0}
 --- !u!82 &192175930
 AudioSource:
   m_ObjectHideFlags: 0
@@ -513,7 +514,7 @@ AudioSource:
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -590,6 +591,7 @@ GameObject:
   - component: {fileID: 478597493}
   - component: {fileID: 478597492}
   - component: {fileID: 478597491}
+  - component: {fileID: 478597494}
   m_Layer: 5
   m_Name: WGameIcon
   m_TagString: Untagged
@@ -653,7 +655,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 478597492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 478597494}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &478597492
@@ -689,6 +702,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478597489}
+--- !u!114 &478597494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478597489}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aaa931af53c8e24c85c272282e9aea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 73fc9df510b544b4297ccf5f47d6bb74, type: 3}
+  Button: {fileID: 0}
 --- !u!1 &1101164022
 GameObject:
   m_ObjectHideFlags: 0
