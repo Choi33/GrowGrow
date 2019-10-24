@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58671643416727524}
   m_Layer: 0
   m_Name: apple1
-  m_TagString: apple
+  m_TagString: apple1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

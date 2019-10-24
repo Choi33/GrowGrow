@@ -8,7 +8,9 @@ public class move : MonoBehaviour {
     int KeyInputCheck = 0;
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
-    public int count = 0;
+    public int count1 = 0;
+    public int count2 = 0;
+    public int count3 = 0;
 
     // Use this for initialization
     void Start () {
@@ -32,10 +34,25 @@ public class move : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "apple")
+        if (collision.tag == "apple1")
         {
-            count++;
-            PlayerPrefs.SetInt("Count", count);
+            count1++;
+            PlayerPrefs.SetInt("Count", count1);
+            //Debug.Log(count);
+        }
+
+        if (collision.tag == "apple2")
+        {
+            count2++;
+            PlayerPrefs.SetInt("Count", count2);
+            //Debug.Log(count);
+
+        }
+
+        if (collision.tag == "apple3")
+        {
+            count3++;
+            PlayerPrefs.SetInt("Count", count3);
             //Debug.Log(count);
 
         }
@@ -43,6 +60,6 @@ public class move : MonoBehaviour {
 
     public int Getcount()
     {
-        return count;
+        return count1+count2+count3;
     }
 }

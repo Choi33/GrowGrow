@@ -66,6 +66,7 @@ public class Problem : MonoBehaviour {
 
         if (num != temp)
         {
+          
             queText.GetComponent<Text>().text = que[num, 1];
         }
         
