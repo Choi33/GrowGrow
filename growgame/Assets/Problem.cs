@@ -42,7 +42,7 @@ public class Problem : MonoBehaviour {
  
 
     public Text queText;
-    public int num=0;
+    public int num=0;    
     public move move;
 
     void Awake()
@@ -53,6 +53,7 @@ public class Problem : MonoBehaviour {
     // Use this for initialization
     void Start () {
         queText.GetComponent<Text>().text = que[0, 1];
+        PlayerPrefs.SetInt("ans", int.Parse(que[0, 0]));
 
     }
 	
@@ -63,11 +64,10 @@ public class Problem : MonoBehaviour {
         //Debug.Log(num);
         
 
-
         if (num != temp)
         {
-          
             queText.GetComponent<Text>().text = que[num, 1];
+            PlayerPrefs.SetInt("ans", int.Parse(que[num, 0]));
         }
         
 	}

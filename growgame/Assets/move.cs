@@ -11,7 +11,6 @@ public class move : MonoBehaviour {
     public int count1 = 0;
     public int count2 = 0;
     public int count3 = 0;
-
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -29,32 +28,47 @@ public class move : MonoBehaviour {
         {
             transform.Translate(-1*MoveSpeed, 0, 0);
         }
-
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "apple1")
+        Debug.Log(PlayerPrefs.GetInt("ans"));
+        if(PlayerPrefs.GetInt("ans") == 1)
         {
-            count1++;
-            PlayerPrefs.SetInt("Count", count1);
-            //Debug.Log(count);
+            if (collision.tag == "apple1")
+            {
+                count1++;
+                Debug.Log("Oo");
+            }
+            else if(collision.tag == "apple2" | collision.tag == "apple3")
+            {
+                Debug.Log("X");
+            }
         }
-
-        if (collision.tag == "apple2")
+        else if (PlayerPrefs.GetInt("ans") == 2)
         {
-            count2++;
-            PlayerPrefs.SetInt("Count", count2);
-            //Debug.Log(count);
-
+            if (collision.tag == "apple2")
+            {
+                count2++;
+                Debug.Log("Oo");
+            }
+            else if (collision.tag == "apple1" | collision.tag == "apple3")
+            {
+                Debug.Log("X");
+            }
         }
-
-        if (collision.tag == "apple3")
+        else if (PlayerPrefs.GetInt("ans") == 3)
         {
-            count3++;
-            PlayerPrefs.SetInt("Count", count3);
-            //Debug.Log(count);
-
+            if (collision.tag == "apple3")
+            {
+                count3++;
+                Debug.Log("Oo");
+            }
+            else if(collision.tag == "apple2" | collision.tag == "apple3")
+            {
+                Debug.Log("X");
+            }
         }
     }
 
