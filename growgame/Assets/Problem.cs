@@ -44,6 +44,7 @@ public class Problem : MonoBehaviour {
     public Text queText;
     public int num=0;    
     public move move;
+    public int ans = 0;
 
     void Awake()
     {
@@ -53,8 +54,7 @@ public class Problem : MonoBehaviour {
     // Use this for initialization
     void Start () {
         queText.GetComponent<Text>().text = que[0, 1];
-        PlayerPrefs.SetInt("ans", int.Parse(que[0, 0]));
-
+        ans = int.Parse(que[0, 0]);
     }
 	
 	// Update is called once per frame
@@ -67,7 +67,7 @@ public class Problem : MonoBehaviour {
         if (num != temp)
         {
             queText.GetComponent<Text>().text = que[num, 1];
-            PlayerPrefs.SetInt("ans", int.Parse(que[num, 0]));
+            ans = int.Parse(que[num, 0]);
         }
         
 	}

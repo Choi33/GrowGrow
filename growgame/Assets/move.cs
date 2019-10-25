@@ -11,10 +11,14 @@ public class move : MonoBehaviour {
     public int count1 = 0;
     public int count2 = 0;
     public int count3 = 0;
+    GetPoint Gp;
+    Problem pro;
+
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
-        PlayerPrefs.SetInt("Count", 0);
+        Gp = GameObject.Find("PrintPoint").GetComponent<GetPoint>();
+        pro = GameObject.Find("ProblemText").GetComponent<Problem>();
     }
 	
 	// Update is called once per frame
@@ -27,47 +31,45 @@ public class move : MonoBehaviour {
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(-1*MoveSpeed, 0, 0);
-        }
-       
+        }       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log(PlayerPrefs.GetInt("ans"));
-        if(PlayerPrefs.GetInt("ans") == 1)
+    {       
+        if(pro.ans == 1)
         {
             if (collision.tag == "apple1")
             {
                 count1++;
-                //Debug.Log("Oo");
+                Gp.AddPoint(10);
             }
             else if(collision.tag == "apple2" | collision.tag == "apple3")
             {
-                //Debug.Log("X");
+                Gp.AddPoint(-5);
             }
         }
-        else if (PlayerPrefs.GetInt("ans") == 2)
+        else if (pro.ans == 2)
         {
             if (collision.tag == "apple2")
             {
                 count2++;
-                //Debug.Log("Oo");
+                Gp.AddPoint(10);
             }
             else if (collision.tag == "apple1" | collision.tag == "apple3")
             {
-                //Debug.Log("X");
+                Gp.AddPoint(-5);
             }
         }
-        else if (PlayerPrefs.GetInt("ans") == 3)
+        else if (pro.ans == 3)
         {
             if (collision.tag == "apple3")
             {
                 count3++;
-                //Debug.Log("Oo");
+                Gp.AddPoint(10);
             }
-            else if(collision.tag == "apple2" | collision.tag == "apple3")
+            else if(collision.tag == "apple2" | collision.tag == "apple1")
             {
-                //Debug.Log("X");
+                Gp.AddPoint(-5);
             }
         }
     }
