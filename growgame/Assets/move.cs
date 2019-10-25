@@ -39,11 +39,11 @@ public class move : MonoBehaviour {
             if (collision.tag == "apple1")
             {
                 count1++;
-                Debug.Log("Oo");
+                //Debug.Log("Oo");
             }
             else if(collision.tag == "apple2" | collision.tag == "apple3")
             {
-                Debug.Log("X");
+                //Debug.Log("X");
             }
         }
         else if (PlayerPrefs.GetInt("ans") == 2)
@@ -51,11 +51,11 @@ public class move : MonoBehaviour {
             if (collision.tag == "apple2")
             {
                 count2++;
-                Debug.Log("Oo");
+                //Debug.Log("Oo");
             }
             else if (collision.tag == "apple1" | collision.tag == "apple3")
             {
-                Debug.Log("X");
+                //Debug.Log("X");
             }
         }
         else if (PlayerPrefs.GetInt("ans") == 3)
@@ -63,11 +63,11 @@ public class move : MonoBehaviour {
             if (collision.tag == "apple3")
             {
                 count3++;
-                Debug.Log("Oo");
+                //Debug.Log("Oo");
             }
             else if(collision.tag == "apple2" | collision.tag == "apple3")
             {
-                Debug.Log("X");
+                //Debug.Log("X");
             }
         }
     }
