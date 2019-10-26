@@ -34,7 +34,7 @@ public class SceneChange : MonoBehaviour {
 	}
     IEnumerator NextScene()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Game");
     }
 }

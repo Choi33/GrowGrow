@@ -5,7 +5,7 @@ using UnityEngine;
 public class ApplePrefab : MonoBehaviour {
 
     public GameObject[] applePrefab;
-    float span = 1.0f;
+    float span = 1.5f;
     float delta = 0;
 
     // Update is called once per frame
@@ -15,7 +15,7 @@ public class ApplePrefab : MonoBehaviour {
         {
             this.delta = 0;
             GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
-            int px = Random.Range(-6, 2);
+            float px = Random.Range(-6, 2);
             go.transform.position = new Vector3(px, 7, 0);
         }
 	}
