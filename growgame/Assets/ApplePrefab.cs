@@ -5,19 +5,31 @@ using UnityEngine;
 public class ApplePrefab : MonoBehaviour {
 
     public GameObject[] applePrefab;
-    float span = 1.5f;
+    public float span = 1.5f;
     float delta = 0;
 
     // Update is called once per frame
     void Update () {
         this.delta += Time.deltaTime;
-        if(this.delta > this.span)
+        if (this.span == 3)
+        {
+            if (this.delta > this.span)
+            {
+                this.delta = 0;
+                GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
+                float px = Random.Range(-6, 2);
+                go.transform.position = new Vector3(px, 7, 0);
+                this.span = 1.5f;
+            }
+        }
+        else if (this.delta > this.span)
         {
             this.delta = 0;
             GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
             float px = Random.Range(-6, 2);
             go.transform.position = new Vector3(px, 7, 0);
         }
-	}
+        
+    }
 
 }
