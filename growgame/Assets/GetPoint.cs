@@ -7,7 +7,7 @@ public class GetPoint : MonoBehaviour {
 
     public static GetPoint instance;
     public Text PrintpPoint;
-    public int point = 50;
+    public static int point = 50;
     
 
     void Awake()

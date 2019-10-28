@@ -36,5 +36,6 @@ public class SceneChange : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Game");
+       // Destroy(this.gameObject);
     }
 }
