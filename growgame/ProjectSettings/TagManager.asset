@@ -6,6 +6,10 @@ TagManager:
   tags:
   - soil
   - apple
+  - apple3
+  - apple2
+  - apple1
+  - tree
   layers:
   - Default
   - TransparentFX

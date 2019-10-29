@@ -1,0 +1,42 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MinCrash : MonoBehaviour {
+
+    GetPoint Gp;
+
+    Rigidbody2D rb;
+    public GameObject target1;
+
+    int non_count = 0;
+
+    // Use this for initialization
+    void Start () {
+
+        rb = GetComponent<Rigidbody2D>();
+        Gp = GameObject.Find("PrintPoint").GetComponent<GetPoint>();
+
+        target1 = GameObject.Find("nonapple(Clone)");
+    }
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "apple")
+        {
+            Gp.SunAddPoint(2);
+            AppleDestroy();
+        }
+    }
+
+    public void AppleDestroy()
+    {
+        Destroy(target1);
+    }
+
+}

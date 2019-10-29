@@ -51,12 +51,12 @@ public class move : MonoBehaviour {
             {
                 pref.span = 7;
                 count1++;
-                Gp.AddPoint(10);
+                Gp.WaterAddPoint(10);
                 AppleDestroy();
             }
             else if(collision.tag == "apple2" | collision.tag == "apple3")
             {
-                Gp.AddPoint(-5);
+                Gp.WaterAddPoint(-5);
             }
         }
         else if (pro.ans == 2)
@@ -65,12 +65,12 @@ public class move : MonoBehaviour {
             {
                 pref.span = 7;
                 count2++;
-                Gp.AddPoint(10);
+                Gp.WaterAddPoint(10);
                 AppleDestroy();
             }
             else if (collision.tag == "apple1" | collision.tag == "apple3")
             {
-                Gp.AddPoint(-5);
+                Gp.WaterAddPoint(-5);
             }
         }
         else if (pro.ans == 3)
@@ -79,12 +79,12 @@ public class move : MonoBehaviour {
             {
                 pref.span = 7;
                 count3++;
-                Gp.AddPoint(10);
+                Gp.WaterAddPoint(10);
                 AppleDestroy();
             }
             else if(collision.tag == "apple2" | collision.tag == "apple1")
             {
-                Gp.AddPoint(-5);
+                Gp.WaterAddPoint(-5);
             }
         }
     }
@@ -93,6 +93,7 @@ public class move : MonoBehaviour {
     {
         return count1+count2+count3;
     }
+
     public void AppleDestroy()
     {
         Destroy(target1);
