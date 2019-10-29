@@ -47,11 +47,11 @@ public class Icon_count : MonoBehaviour {
     public void IconCount()
     {
         int temp = GetPoint.point;
-        if (temp >= 60 && temp <= 70) 
+        if (temp >= 60) 
         {
             sunpoint.text = "x " + suncount + 1;
         }
-        if(temp >= 71 && temp <= 80) {
+        if(temp >= 71) {
             waterpoint.text = "x " + watercount + 1;
         }          
     }
