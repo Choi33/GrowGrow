@@ -49,7 +49,7 @@ public class move : MonoBehaviour {
         {
             if (collision.tag == "apple1")
             {
-                pref.span = 3;
+                pref.span = 7;
                 count1++;
                 Gp.AddPoint(10);
                 AppleDestroy();
@@ -63,7 +63,7 @@ public class move : MonoBehaviour {
         {
             if (collision.tag == "apple2")
             {
-                pref.span = 3;
+                pref.span = 7;
                 count2++;
                 Gp.AddPoint(10);
                 AppleDestroy();
@@ -77,7 +77,7 @@ public class move : MonoBehaviour {
         {
             if (collision.tag == "apple3")
             {
-                pref.span = 3;
+                pref.span = 7;
                 count3++;
                 Gp.AddPoint(10);
                 AppleDestroy();
