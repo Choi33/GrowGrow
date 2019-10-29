@@ -5,15 +5,21 @@ using UnityEngine;
 public class MinMove : MonoBehaviour {
 
     Rigidbody2D rb;
-    int RightLeftDistinction = 0;//좌우판별
+    public GameObject target1;
+    public GameObject target2;
+    public GameObject target3;
 
+    int RightLeftDistinction = 0;//좌우판별
     float MoveSpeed = 0.1f;
 
-    // Use this for initialization
+
     void Start () {
 
         rb = GetComponent<Rigidbody2D>();
 
+        target1 = GameObject.Find("apple1(Clone)");
+        target2 = GameObject.Find("apple2(Clone)");
+        target3 = GameObject.Find("apple3(Clone)");
     }
 	
 	// Update is called once per frame
@@ -29,5 +35,21 @@ public class MinMove : MonoBehaviour {
             transform.Translate(-1 * MoveSpeed, 0, 0);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "apple1")
+        {
+
+        }
+        if (collision.tag == "apple2")
+        {
+
+        }
+        if (collision.tag == "apple3")
+        {
+
+        }
     }
 }
