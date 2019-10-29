@@ -6,13 +6,13 @@ using System.Threading;
 
 public class SceneChange : MonoBehaviour {
 
-    GameObject Loding;
+    GameObject Loading;
     public void OnClick()
     {
         //SM.Play(Clip);
         GetComponent<AudioSource>().Play();
-        Loding = GameObject.Find("LodingFade");
-        Loding.transform.Translate(-1200, 0, 0);
+        Loading = GameObject.Find("LoadingFade");
+        Loading.transform.Translate(-1200, 0, 0);
         StartCoroutine(NextScene());
         //SceneManager.LoadScene("Loading");
     }
