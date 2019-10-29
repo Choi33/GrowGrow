@@ -8,6 +8,7 @@ public class GetPoint : MonoBehaviour {
     public static GetPoint instance;
     public Text PrintpPoint;
     public static int point = 50;
+ 
     
 
     void Awake()
@@ -15,7 +16,7 @@ public class GetPoint : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Start () { 
 
         PrintpPoint = GameObject.Find("Point").GetComponent<Text>();
         PrintpPoint.text = "점수 :" + point;
@@ -32,6 +33,6 @@ public class GetPoint : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () { 
     }        
 }
