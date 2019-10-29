@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 962319067}
   - component: {fileID: 962319066}
   m_Layer: 5
-  m_Name: Loding
+  m_Name: Loading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,7 +1501,7 @@ GameObject:
   - component: {fileID: 1718724250}
   - component: {fileID: 1718724249}
   m_Layer: 5
-  m_Name: LodingFade
+  m_Name: LoadingFade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
