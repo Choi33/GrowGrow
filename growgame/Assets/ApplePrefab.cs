@@ -12,15 +12,13 @@ public class ApplePrefab : MonoBehaviour {
     void Update () {
         this.delta += Time.deltaTime;
         if (this.span == 7)
-        {
-            Debug.Log("지연");
+        {;
             if (this.delta > this.span)
             {
                 this.delta = 0;
                 GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
-                float px = Random.Range(-6, 2);
+                float px = Random.Range(-6f, 2f);
                 go.transform.position = new Vector3(px, 7, 0);
-                Debug.Log("새거나온당");
                 this.span = 1.5f;
             }
         }
@@ -28,9 +26,8 @@ public class ApplePrefab : MonoBehaviour {
         {
             this.delta = 0;
             GameObject go = Instantiate(applePrefab[Random.Range(0, applePrefab.Length)]) as GameObject;
-            float px = Random.Range(-6, 2);
+            float px = Random.Range(-6f, 2f);
             go.transform.position = new Vector3(px, 7, 0);
-            Debug.Log("기본");
         }
         
     }
