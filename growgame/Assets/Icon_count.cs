@@ -24,6 +24,7 @@ public class Icon_count : MonoBehaviour {
     public void WaterIconCount()
     {
         int temp = GetPoint.waterpoint;
+
         if (temp >= 150) 
         {
             waterpoint.text = "x " + watercount + 1;
@@ -31,13 +32,29 @@ public class Icon_count : MonoBehaviour {
         if (temp >= 250)
         {
             waterpoint.text = "x " + watercount + 2;
-        }      
+        }
+
+        if (temp >= 350)
+        {
+            waterpoint.text = "x " + watercount + 3;
+        }
+
+        if (temp >= 450)
+        {
+            waterpoint.text = "x " + watercount + 4;
+        }
     }
 
     public void SunIconCount()
     {
         int temp2 = MinGetPoint.sunpoint;
+
         if (temp2 >= 100)
+        {
+            sunpoint.text = "x " + suncount + 1;
+        }
+
+        if (temp2 >= 200)
         {
             sunpoint.text = "x " + suncount + 1;
         }
