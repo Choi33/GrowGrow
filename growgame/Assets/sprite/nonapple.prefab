@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4084050352657270}
   - component: {fileID: 212309040800383104}
-  - component: {fileID: 114981490856559764}
   - component: {fileID: 58823996270539980}
   m_Layer: 0
   m_Name: nonapple
@@ -57,18 +56,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.2499999
---- !u!114 &114981490856559764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1659001084147166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30370d4d32572e14a955107cb11c9dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  count: 0
 --- !u!212 &212309040800383104
 SpriteRenderer:
   m_ObjectHideFlags: 1
