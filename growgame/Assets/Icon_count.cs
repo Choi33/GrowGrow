@@ -20,45 +20,33 @@ public class Icon_count : MonoBehaviour {
         sunpoint.text = "x " + suncount;
     }
 
-   /*
-    public void SunCount(int num)
+
+    public void WaterIconCount()
     {
-
-        if ((GetPoint.point>=60))
+        int temp = GetPoint.waterpoint;
+        if (temp >= 150) 
         {
-            sunpoint.text = "x " + suncount+1;
+            waterpoint.text = "x " + watercount + 1;
         }
-
-        if ((GetPoint.point >= 80))
+        if (temp >= 250)
         {
-            sunpoint.text = "x " + suncount + 2;
-        }
-
+            waterpoint.text = "x " + watercount + 2;
+        }      
     }
 
-    public void WaterCount(int num)
+    public void SunIconCount()
     {
-        if ((GetPoint.point>=70))
-        {
-            waterpoint.text = "x " + watercount+1;
-        }
-    }
-    */
-    public void IconCount()
-    {
-        int temp = GetPoint.point;
-        if (temp >= 60) 
+        int temp2 = MinGetPoint.sunpoint;
+        if (temp2 >= 100)
         {
             sunpoint.text = "x " + suncount + 1;
         }
-        if(temp >= 71) {
-            waterpoint.text = "x " + watercount + 1;
-        }          
     }
 
     // Update is called once per frame
     void Update () {
-        IconCount();
+        WaterIconCount();
+        SunIconCount();
         //SunCount(suncount);
         //WaterCount(watercount);
 	}

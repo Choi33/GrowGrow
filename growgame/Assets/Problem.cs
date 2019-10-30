@@ -109,7 +109,7 @@ public class Problem : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        this.soil_sprite = GameObject.Find("soil_shoot");
+      //  this.soil_sprite = GameObject.Find("soil_shoot");
         queText.GetComponent<Text>().text = que[0, 1];
         ans = int.Parse(que[0, 0]);
     }
@@ -127,9 +127,17 @@ public class Problem : MonoBehaviour {
             ans = int.Parse(que[num, 0]);
         }
 
-        /* 꽃일때 문제 바뀌는 조건
-        if(soil_sprite.GetComponent<SpriteRenderer>().sprite=changesprite.nextSprite1)
+        /*
+        if (soil_sprite.GetComponent<SpriteRenderer>().sprite = changesprite.nextSprite1)
         {
+            queText.GetComponent<Text>().text = que2[0, 1];
+            ans = int.Parse(que[2, 0]);
+
+            if (num != temp)
+            {
+                queText.GetComponent<Text>().text = que2[num, 1];
+                ans = int.Parse(que2[num, 0]);
+            }
 
         }
         */

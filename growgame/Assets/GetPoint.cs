@@ -7,7 +7,7 @@ public class GetPoint : MonoBehaviour {
 
     public static GetPoint instance;
     public Text PrintpPoint;
-    public static int point = 50;
+    public static int waterpoint = 50;
  
     
 
@@ -19,17 +19,17 @@ public class GetPoint : MonoBehaviour {
     void Start () { 
 
         PrintpPoint = GameObject.Find("Point").GetComponent<Text>();
-        PrintpPoint.text = "점수 :" + point;
+        PrintpPoint.text = "점수 :" + waterpoint;
     }
 
     public void AddPoint(int num)
     {
-        point = point + num;
-        if(point < 0)
+        waterpoint = waterpoint + num;
+        if(waterpoint < 0)
         {
-            point = 0;
+            waterpoint = 0;
         }
-        PrintpPoint.text = "점수 : " + point;
+        PrintpPoint.text = "점수 : " + waterpoint;
     }
 	
 	// Update is called once per frame

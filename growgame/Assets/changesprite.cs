@@ -14,11 +14,11 @@ public class changesprite : MonoBehaviour {
 	
     void changeImg()
     {
-        if (GetPoint.point >= 250 && GetPoint.point < 300)
+        if (GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = nextSprite1;
         }
-        if (GetPoint.point >=300)
+        if (GetPoint.waterpoint >=500 && MinGetPoint.sunpoint >= 300)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = nextSprite2;
         }
