@@ -6,14 +6,14 @@ using System.Threading;
 
 public class SceChMin : MonoBehaviour {
 
-    GameObject Loding;
+    GameObject Loading;
     // Use this for initialization
 
     public void OnClick()
     {
         GetComponent<AudioSource>().Play();
-        Loding = GameObject.Find("LodingFade");
-        Loding.transform.Translate(-1200, 0, 0);
+        Loading = GameObject.Find("LoadingFade");
+        Loading.transform.Translate(-1200, 0, 0);
         StartCoroutine(NextScene());
     }
 
