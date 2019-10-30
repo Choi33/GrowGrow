@@ -22,7 +22,6 @@ public class MinGetPoint : MonoBehaviour {
     {
 
         sunpoint = sunpoint + num1;
-        Debug.Log("점수올라감" + num1);
         if (sunpoint < 0)
         {
             sunpoint = 0;
