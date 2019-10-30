@@ -8,7 +8,7 @@ public class MinGetPoint : MonoBehaviour {
     public static MinGetPoint instance;
     public Text PrintpPoint2;
 
-    public static int sunpoint = 50;
+    public static int sunpoint = 0;
 
     // Use this for initialization
     void Start () {

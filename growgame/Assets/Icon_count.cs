@@ -40,7 +40,7 @@ public class Icon_count : MonoBehaviour {
 
         if (temp2 >= 150)
         {
-            sunpoint.text = "x" + sunpoint + 1;
+            sunpoint.text = "x" + suncount + 1;
         }
     }
 
