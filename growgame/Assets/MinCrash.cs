@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MinCrash : MonoBehaviour {
 
-    GetPoint Gp;
+    MinGetPoint Mingetp;
 
     Rigidbody2D rb;
     public GameObject target1;
@@ -15,7 +15,7 @@ public class MinCrash : MonoBehaviour {
     void Start () {
 
         rb = GetComponent<Rigidbody2D>();
-        Gp = GameObject.Find("PrintPoint").GetComponent<GetPoint>();
+        Mingetp = GameObject.Find("PrintPoint2").GetComponent<MinGetPoint>();
 
         target1 = GameObject.Find("nonapple(Clone)");
     }
@@ -29,7 +29,7 @@ public class MinCrash : MonoBehaviour {
     {
         if (collision.tag == "apple")
         {
-            Gp.SunAddPoint(2);
+            Mingetp.SunAddPoint(2);
             AppleDestroy();
         }
     }

@@ -12,8 +12,6 @@ public class GetPoint : MonoBehaviour {
 
     public static int waterpoint = 50;
 
-    public static int sunpoint = 50;
-
 
 
     void Awake(){
@@ -24,12 +22,13 @@ public class GetPoint : MonoBehaviour {
     void Start () { 
 
         PrintpPoint = GameObject.Find("Point").GetComponent<Text>();
-        PrintpPoint.text = "점수 :" + point; //여기가 point라서 초기값이 50으로나오고 미니게임상 점수를 얻어오면 줄력이 sunpoint로 바뀌어서 왔다갔다하는거
+        PrintpPoint.text = "점수 :" + waterpoint; //여기가 point라서 초기값이 50으로나오고 미니게임상 점수를 얻어오면 줄력이 sunpoint로 바뀌어서 왔다갔다하는거
     }
 
     public void WaterAddPoint(int num)
     {
         waterpoint = waterpoint + num;
+
         if(waterpoint < 0)
         {
             waterpoint = 0;
@@ -37,15 +36,7 @@ public class GetPoint : MonoBehaviour {
         PrintpPoint.text = "점수 : " + waterpoint;
     }
 	
-    public void SunAddPoint(int num1)
-    {
-        sunpoint = sunpoint + num1;
-        if (sunpoint < 0)
-        {
-            sunpoint = 0;
-        }
-        PrintpPoint.text="점수 : "+ sunpoint;
-    }
+
 
 	// Update is called once per frame
 	void Update () {

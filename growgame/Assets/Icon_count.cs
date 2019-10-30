@@ -36,8 +36,9 @@ public class Icon_count : MonoBehaviour {
 
     public void SunIconCount()
     {
-        int temp = GetPoint.sunpoint;
-        if (temp >= 150)
+        int temp2 = MinGetPoint.sunpoint;
+
+        if (temp2 >= 150)
         {
             sunpoint.text = "x" + sunpoint + 1;
         }

@@ -868,7 +868,7 @@ GameObject:
   - component: {fileID: 1300363113}
   - component: {fileID: 1300363112}
   m_Layer: 0
-  m_Name: PrintPoint
+  m_Name: PrintPoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -882,10 +882,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300363111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c70958af310b4a489d87d39fe2fe470, type: 3}
+  m_Script: {fileID: 11500000, guid: b40d5262ba836f444ac642f3928fa9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrintpPoint: {fileID: 0}
+  PrintpPoint2: {fileID: 0}
 --- !u!4 &1300363113
 Transform:
   m_ObjectHideFlags: 0
