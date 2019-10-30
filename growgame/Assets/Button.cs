@@ -35,6 +35,13 @@ public class Button : MonoBehaviour {
         }
     }
 
+    public void Reset()
+    {
+        GetPoint.waterpoint = 50;
+        MinGetPoint.sunpoint = 0;
+        SceneManager.LoadScene("Main");
+    }
+
     // Use this for initialization
     void Start () {
 		
