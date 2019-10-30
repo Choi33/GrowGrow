@@ -29,7 +29,7 @@ public class MinCrash : MonoBehaviour {
     {
         if (collision.tag == "apple")
         {
-            Mingetp.SunAddPoint(10);
+            Mingetp.SunAddPoint(2);
             AppleDestroy();
         }
     }
