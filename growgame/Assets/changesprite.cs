@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class changesprite : MonoBehaviour {
 
-    public Sprite nextSprite1;
-    public Sprite nextSprite2;
+    public static Sprite nextSprite1;
+    public static Sprite nextSprite2;
 
     // Use this for initialization
     void Start () {
