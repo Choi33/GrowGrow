@@ -8,8 +8,8 @@ public class move : MonoBehaviour {
     int KeyInputCheck = 0;
     int RightLeftDistinction = 0;//좌우판별
     Rigidbody2D rb;
-    public int count1 = 0;
-    public int count2 = 0;
+    static public int count1 = 0;
+    static public int count2 = 0;
 
     GetPoint Gp;
     Problem pro;
