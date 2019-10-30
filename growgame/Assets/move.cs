@@ -49,42 +49,42 @@ public class move : MonoBehaviour {
         {
             if (collision.tag == "apple1")
             {
-                pref.span = 7;
+                pref.span = 10;
                 count1++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
             else if(collision.tag == "apple2" | collision.tag == "apple3")
             {
-                Gp.AddPoint(-5);
+                Gp.AddPoint(-10);
             }
         }
         else if (pro.ans == 2)
         {
             if (collision.tag == "apple2")
             {
-                pref.span = 7;
+                pref.span = 10;
                 count2++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
             else if (collision.tag == "apple1" | collision.tag == "apple3")
             {
-                Gp.AddPoint(-5);
+                Gp.AddPoint(-10);
             }
         }
         else if (pro.ans == 3)
         {
             if (collision.tag == "apple3")
             {
-                pref.span = 7;
+                pref.span = 10;
                 count3++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
             else if(collision.tag == "apple2" | collision.tag == "apple1")
             {
-                Gp.AddPoint(-5);
+                Gp.AddPoint(-10);
             }
         }
     }
