@@ -10,7 +10,7 @@ public class move : MonoBehaviour {
     Rigidbody2D rb;
     public int count1 = 0;
     public int count2 = 0;
-    public int count3 = 0;
+
     GetPoint Gp;
     Problem pro;
     ApplePrefab pref;
@@ -51,6 +51,7 @@ public class move : MonoBehaviour {
             {
                 pref.span = 10;
                 count1++;
+                count2++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
@@ -64,6 +65,7 @@ public class move : MonoBehaviour {
             if (collision.tag == "apple2")
             {
                 pref.span = 10;
+                count1++;
                 count2++;
                 Gp.AddPoint(10);
                 AppleDestroy();
@@ -78,7 +80,8 @@ public class move : MonoBehaviour {
             if (collision.tag == "apple3")
             {
                 pref.span = 10;
-                count3++;
+                count1++;
+                count2++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
@@ -91,7 +94,12 @@ public class move : MonoBehaviour {
 
     public int Getcount()
     {
-        return count1+count2+count3;
+        return count1;
+    }
+
+    public int Getcount2()
+    {
+        return count2;
     }
 
     public void AppleDestroy()

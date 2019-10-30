@@ -97,7 +97,8 @@ public class Problem : MonoBehaviour {
 
 
     public Text queText;
-    public int num=0;    
+    public int num=0;
+    public int num2 = 0;
     public move move;
     public int ans = 0;
 
@@ -128,12 +129,21 @@ public class Problem : MonoBehaviour {
         /*꽃일때 문제바뀜*/
         if(GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
         {
-            queText.GetComponent<Text>().text = que2[0, 1];
-            ans = int.Parse(que2[0, 0]);
+            if(num2 == num) {
 
-            if (num != temp)
+                move.count2 = 0;
+
+            }
+
+            queText.GetComponent<Text>().text = que2[num2, 1];
+            ans = int.Parse(que2[num2, 0]);
+
+            int temp2 = num2;
+            num2 = move.Getcount2();
+
+            if (num2 != temp2)
             {
-                queText.GetComponent<Text>().text = que2[num, 1];
+                queText.GetComponent<Text>().text = que2[num2, 1];
                 ans = int.Parse(que2[num, 0]);
             }
         }
