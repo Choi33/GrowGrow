@@ -8,8 +8,7 @@ using System.IO;
 public class Problem : MonoBehaviour {
 
     GameObject soil_sprite;
-    public String[,] que;
-     /*public String[,] que =
+    public String[,] que =
      {
         {"1","클래스는 뭐하라고 있는 것? (    ) 만들라고 있는 것!"+"\n\n1. 객체  2. 무결성  3. 데이터" },
         { "2","컴퓨터에서 실수를 표현하는 방식 중 하나인 (  )은  실수를 가수와 지수로 나누어 표현하여 표현할 수 있는 실수의 범위를 확장시킨다." +"\n\n1. 고정 소수점  2. 부동 소수점  3. 정수 부분 "},
@@ -91,16 +90,11 @@ public class Problem : MonoBehaviour {
                 "\n\n1. CSMA  2. CSMA/CA 3. CSMA/CD"},
         {"2","이더넷의 frame 중에 데이터와 패딩 영역이 들어가는 부분은 최대 몇 byte까지 가능한가?"+"\n\n1. 1400  2. 1500  3. 1600" },
         {"2","이더넷의 주소에서 첫 byte 시작 bit가 1일 경우 어떤 방식으로 통신을 하는가?"+"\n\n1. broadcast  2. multicast  3. unicast" },
-<<<<<<< Updated upstream
         {"1"," (  )는 초당 주기를 의미하여 주기의 역수 값을 가진다." +"\n\n1. 주파수  2. 진폭  3. 파장"},
         {"3","PCM은 아날로그 신호를 (  ) 하고 이를 인코딩하여 정규화를 거처 디지털 신호를 만들어낸다." +"\n\n1. 진폭화  2. 시퀸스  3. 샘플링"},
         {"3","Multiplexing 방식 중 하나인 (  )은 전송 시간을 슬롯 단위로 쪼개 데이터를 전송시키는 방식이다." +"\n\n1. FDM  2. WDM  3. TDM"},
         {"2","Optical fiber에서 가장 감쇠가 적은 nm은?"+"\n\n1. 850nm  2. 1550nm  3. 1350nm" }     
     };
-=======
-    };*/
->>>>>>> Stashed changes
-
 
 
     public Text queText;
