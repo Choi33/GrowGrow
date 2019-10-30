@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5176d81a11e2e2741853c496df393c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LimitTime: 10
+  LimitTime: 15
   text_Timer: {fileID: 948354720}
 --- !u!114 &948354720
 MonoBehaviour:
@@ -1570,7 +1570,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012482659}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
