@@ -1346,7 +1346,6 @@ GameObject:
   - component: {fileID: 2012482665}
   - component: {fileID: 2012482664}
   - component: {fileID: 2012482662}
-  - component: {fileID: 2012482661}
   - component: {fileID: 2012482667}
   - component: {fileID: 2012482660}
   - component: {fileID: 2012482663}
@@ -1370,27 +1369,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSprite1: {fileID: 21300000, guid: 4ade47484f116584e87943054af832fc, type: 3}
   nextSprite2: {fileID: 21300000, guid: dd35ced50b79aba409094957d27d9fa1, type: 3}
---- !u!68 &2012482661
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012482659}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1, y: 0.3}
-  - {x: -0.7, y: 0.4}
-  - {x: 0.3, y: 0.4}
-  - {x: 0.6, y: 0.3}
-  - {x: 0.4, y: -0.55}
-  - {x: -0.7, y: -0.55}
 --- !u!61 &2012482662
 BoxCollider2D:
   m_ObjectHideFlags: 0

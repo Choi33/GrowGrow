@@ -5,8 +5,10 @@ using UnityEngine;
 public class MinApple : MonoBehaviour {
 
     public GameObject minapplePrefab;
-    float span = 1.5f;
+
+    float span = 0.5f;
     float delta = 0;
+
     // Use this for initialization
     void Start () {
 		
@@ -14,7 +16,9 @@ public class MinApple : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update()
-    { 
+    {
+
+        transform.Translate(0, -5.0f, 0);
         this.delta += Time.deltaTime;
         if (this.delta > this.span)
         {
@@ -23,5 +27,7 @@ public class MinApple : MonoBehaviour {
             float px = Random.Range(-6, 2);
             ap.transform.position = new Vector3(px, 7, 0);
         }
-	}
+
+        
+    }
 }
