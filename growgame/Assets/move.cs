@@ -93,6 +93,7 @@ public class move : MonoBehaviour {
     {
         return count1+count2+count3;
     }
+
     public void AppleDestroy()
     {
         Destroy(target1);

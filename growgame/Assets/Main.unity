@@ -1761,6 +1761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93baef7775c00864491f6c8a174b9629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSprite1: {fileID: 21300000, guid: 314f4a1277377aa488e72e8b0f382e23, type: 3}
+  nextSprite2: {fileID: 21300000, guid: dd35ced50b79aba409094957d27d9fa1, type: 3}
 --- !u!1 &1924032401
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ using System.IO;
 
 public class Problem : MonoBehaviour {
 
-    GameObject soil_sprite;
     public String[,] que =
      {
         {"1","클래스는 뭐하라고 있는 것? (    ) 만들라고 있는 것!"+"\n\n1. 객체  2. 무결성  3. 데이터" },
@@ -109,7 +108,6 @@ public class Problem : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-      //  this.soil_sprite = GameObject.Find("soil_shoot");
         queText.GetComponent<Text>().text = que[0, 1];
         ans = int.Parse(que[0, 0]);
     }
@@ -127,20 +125,19 @@ public class Problem : MonoBehaviour {
             ans = int.Parse(que[num, 0]);
         }
 
-        /*
-        if (soil_sprite.GetComponent<SpriteRenderer>().sprite = changesprite.nextSprite1)
+        /*꽃일때 문제바뀜*/
+        if(GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
         {
             queText.GetComponent<Text>().text = que2[0, 1];
-            ans = int.Parse(que[2, 0]);
+            ans = int.Parse(que2[0, 0]);
 
             if (num != temp)
             {
                 queText.GetComponent<Text>().text = que2[num, 1];
                 ans = int.Parse(que2[num, 0]);
             }
-
         }
-        */
+        
         
 	}
 }
