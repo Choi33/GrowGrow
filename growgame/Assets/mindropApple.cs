@@ -11,7 +11,7 @@ public class mindropApple : MonoBehaviour {
     void Start()
     {
         this.soil_shoot = GameObject.Find("soil_shoot");
-        speed = Random.Range(0.06f, 0.1f);
+        speed = Random.Range(0.08f, 0.12f);
     }
 
     // Update is called once per frame

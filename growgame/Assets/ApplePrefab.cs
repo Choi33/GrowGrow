@@ -11,7 +11,7 @@ public class ApplePrefab : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         this.delta += Time.deltaTime;
-        if (this.span == 7)
+        if (this.span == 3.5f)
         {;
             if (this.delta > this.span)
             {

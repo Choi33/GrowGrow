@@ -221,9 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1f1959a8219c34e86f734c967e7433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count1: 0
-  count2: 0
-  count3: 0
   target1: {fileID: 0}
   target2: {fileID: 0}
   target3: {fileID: 0}
@@ -646,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   queText: {fileID: 1517383035}
   num: 0
+  num2: 0
   move: {fileID: 0}
   ans: 0
 --- !u!4 &911216257
@@ -1182,10 +1180,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1474,7 +1472,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
