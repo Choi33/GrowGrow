@@ -36,14 +36,14 @@ public class Button : MonoBehaviour {
     }
     public void pointup_flower()
     {   
-        GetPoint.waterpoint = 150;
+        GetPoint.waterpoint = 100;
         MinGetPoint.sunpoint = 50;
         SoilStauts.change_s = 0;
     }
 
     public void pointup_fruit()
     {
-        GetPoint.waterpoint = 350;
+        GetPoint.waterpoint = 300;
         MinGetPoint.sunpoint = 100;
         SoilStauts.change_s = 0;
     }
@@ -51,7 +51,7 @@ public class Button : MonoBehaviour {
 
     public void Reset()
     {
-        GetPoint.waterpoint = 50;
+        GetPoint.waterpoint = 0;
         MinGetPoint.sunpoint = 0;
         SceneManager.LoadScene("Main");
         SoilStauts.change_s = 0;

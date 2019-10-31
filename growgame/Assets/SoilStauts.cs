@@ -15,17 +15,17 @@ public class SoilStauts : MonoBehaviour {
     public void change()
     {
         int temp;
-        if (GetPoint.waterpoint >= 50 && MinGetPoint.sunpoint >= 0)
+        if (GetPoint.waterpoint >= 0 && MinGetPoint.sunpoint >= 0)
         {
             temp = change_s;
         }
-        if (GetPoint.waterpoint >= 150 && MinGetPoint.sunpoint >= 50)
+        if (GetPoint.waterpoint >= 100 && MinGetPoint.sunpoint >= 50)
         {
             change_s = 1;
             temp = change_s;
         }
 
-        if (GetPoint.waterpoint >= 350 && MinGetPoint.sunpoint >= 100)
+        if (GetPoint.waterpoint >= 300 && MinGetPoint.sunpoint >= 100)
         {
             change_s = 2;
             temp = change_s;
