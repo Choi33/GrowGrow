@@ -20,7 +20,7 @@ public class GetPoint : MonoBehaviour {
     void Start () { 
 
         PrintpPoint = GameObject.Find("Point").GetComponent<Text>();
-        PrintpPoint.text = "점수 :" + waterpoint;
+        PrintpPoint.text = "점수 :" + point;
     }
 
     public void AddPoint(int num)

@@ -44,7 +44,7 @@ public class move : MonoBehaviour {
         target2 = GameObject.Find("apple2(Clone)");
         target3 = GameObject.Find("apple3(Clone)");
 
-        if(Qnum >= 4)
+        if(Qnum >= 5)
         {
             GetPoint.waterpoint += Gp.point;
             SceneManager.LoadScene("Main");

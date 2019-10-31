@@ -13,7 +13,7 @@ public class SceChMin : MonoBehaviour {
     {
         GetComponent<AudioSource>().Play();
         Loading = GameObject.Find("LoadingFade");
-        Loading.transform.Translate(-1200, 0, 0);
+        Loading.transform.Translate(-1280, 0, 0);
         StartCoroutine(NextScene());
     }
 
