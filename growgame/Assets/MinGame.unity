@@ -802,7 +802,6 @@ GameObject:
   - component: {fileID: 948354718}
   - component: {fileID: 948354721}
   - component: {fileID: 948354720}
-  - component: {fileID: 948354719}
   m_Layer: 5
   m_Name: Time_Text
   m_TagString: Untagged
@@ -828,19 +827,6 @@ RectTransform:
   m_AnchoredPosition: {x: 495, y: 20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &948354719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948354717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5176d81a11e2e2741853c496df393c3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LimitTime: 10
-  text_Timer: {fileID: 948354720}
 --- !u!114 &948354720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,6 +962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrintpPoint2: {fileID: 0}
+  LimitTime: 10
+  text_Timer: {fileID: 948354720}
 --- !u!4 &1300363113
 Transform:
   m_ObjectHideFlags: 0

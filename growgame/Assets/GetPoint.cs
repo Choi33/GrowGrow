@@ -7,7 +7,8 @@ public class GetPoint : MonoBehaviour {
 
     public static GetPoint instance;
     public Text PrintpPoint;
-    public static int waterpoint = 50;
+    public static int waterpoint = 0;
+    public int point = 50;
  
     
 
@@ -24,12 +25,12 @@ public class GetPoint : MonoBehaviour {
 
     public void AddPoint(int num)
     {
-        waterpoint = waterpoint + num;
-        if(waterpoint < 0)
+        point = point + num;
+        if(point < 0)
         {
-            waterpoint = 0;
+            point = 0;
         }
-        PrintpPoint.text = "점수 : " + waterpoint;
+        PrintpPoint.text = "점수 : " +point;
     }
 	
 	// Update is called once per frame

@@ -31,7 +31,7 @@ public class GageUI : MonoBehaviour {
     {
         WaterIconCount();
         SunIconCount();
-        Water = GetPoint.waterpoint- 50 - watercount * 100;
+        Water = GetPoint.waterpoint - watercount * 100;
         Sun = MinGetPoint.sunpoint - suncount * 50;
         if (Water >= 100)
         {
@@ -50,21 +50,21 @@ public class GageUI : MonoBehaviour {
     public void WaterIconCount()
     {
         int temp = GetPoint.waterpoint;
-        if (temp >= 150)
+        if (temp >= 100)
         {            
             watercount = 1;
         }
-        if (temp >= 250)
+        if (temp >= 200)
         {
             watercount = 2;
         }
 
-        if (temp >= 350)
+        if (temp >= 300)
         {
             watercount = 3;
         }
 
-        if (temp >= 450)
+        if (temp >= 400)
         {
             watercount = 4;
         }
@@ -83,6 +83,11 @@ public class GageUI : MonoBehaviour {
         if (temp2 >= 100)
         {
             suncount = 2;
+        }
+
+        if (temp2 >= 150)
+        {
+            suncount = 3;
         }
         sunpoint.text = "x " + suncount;
     }

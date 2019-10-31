@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class move : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class move : MonoBehaviour {
     Rigidbody2D rb;
     static public int count1 = 0;
     static public int count2 = 0;
+    int Qnum = 0;
 
     GetPoint Gp;
     Problem pro;
@@ -41,6 +43,12 @@ public class move : MonoBehaviour {
         target1 = GameObject.Find("apple1(Clone)");
         target2 = GameObject.Find("apple2(Clone)");
         target3 = GameObject.Find("apple3(Clone)");
+
+        if(Qnum >= 4)
+        {
+            GetPoint.waterpoint += Gp.point;
+            SceneManager.LoadScene("Main");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,6 +60,7 @@ public class move : MonoBehaviour {
                 pref.span = 3.5f;
                 count1++;
                 count2++;
+                Qnum++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
@@ -67,6 +76,7 @@ public class move : MonoBehaviour {
                 pref.span = 3.5f;
                 count1++;
                 count2++;
+                Qnum++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
@@ -82,6 +92,7 @@ public class move : MonoBehaviour {
                 pref.span = 3.5f;
                 count1++;
                 count2++;
+                Qnum++;
                 Gp.AddPoint(10);
                 AppleDestroy();
             }
