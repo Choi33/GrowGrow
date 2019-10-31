@@ -34,15 +34,19 @@ public class Button : MonoBehaviour {
             Time.timeScale = 1;
         }
     }
-    public void pointup()
+    public void pointup_flower()
     {   
             GetPoint.waterpoint = 150;
             MinGetPoint.sunpoint = 50;
-
-            GetPoint.waterpoint = 350;
-            MinGetPoint.sunpoint = 100;
-    
     }
+
+    public void pointup_fruit()
+    {
+        GetPoint.waterpoint = 350;
+        MinGetPoint.sunpoint = 100;
+    }
+
+
     public void Reset()
     {
         GetPoint.waterpoint = 50;
