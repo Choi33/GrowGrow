@@ -9,23 +9,25 @@ public class changesprite : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+
 	}
 	
     void changeImg()
     {
-        if (GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
+        int c = SoilStauts.change_s;
+
+        if (c==1)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = nextSprite1;
         }
-        if (GetPoint.waterpoint >=500 && MinGetPoint.sunpoint >= 300)
+        if (c==2)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = nextSprite2;
         }
 
     }
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
         changeImg();
 	}
 }
