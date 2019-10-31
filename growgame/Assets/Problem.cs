@@ -113,8 +113,13 @@ public class Problem : MonoBehaviour {
             ans = int.Parse(que[num, 0]);
         }
 
+        if (num==que.Length)
+        {
+            num = 0;
+        }
+
         /*꽃일때 문제바뀜*/
-        if(GetPoint.waterpoint >= 150 && MinGetPoint.sunpoint >= 50)
+        if(GetPoint.waterpoint >= 100 && MinGetPoint.sunpoint >= 50)
         {
             if(num2 == num) {
 
@@ -132,6 +137,11 @@ public class Problem : MonoBehaviour {
             {
                 queText.GetComponent<Text>().text = que2[num2, 1];
                 ans = int.Parse(que2[num, 0]);
+            }
+
+            if (num2 == que.Length)
+            {
+                num2 = 0;
             }
         }
         

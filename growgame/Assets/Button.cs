@@ -55,6 +55,8 @@ public class Button : MonoBehaviour {
         MinGetPoint.sunpoint = 0;
         SceneManager.LoadScene("Main");
         SoilStauts.change_s = 0;
+        move.count2 = 0 ;
+        move.count1 = 0;
     }
 
     // Use this for initialization
