@@ -102,6 +102,7 @@ public class Problem : MonoBehaviour {
     public move move;
     public int ans = 0;
 
+
     void Awake()
     {
         move=GameObject.Find("soil_shoot").GetComponent<move>();
@@ -119,6 +120,7 @@ public class Problem : MonoBehaviour {
         num = move.Getcount();
         //Debug.Log(num);
         
+        
 
         if (num != temp)
         {
@@ -127,7 +129,7 @@ public class Problem : MonoBehaviour {
         }
 
         /*꽃일때 문제바뀜*/
-        if(GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
+        if(GetPoint.waterpoint >= 150 && MinGetPoint.sunpoint >= 50)
         {
             if(num2 == num) {
 

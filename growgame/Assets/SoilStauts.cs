@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoiStauts : MonoBehaviour {
+public class SoilStauts : MonoBehaviour {
 
     public static int change_s = 0;
-    public static SoiStauts instance;
+    public static SoilStauts instance;
 
     // Use this for initialization
     void Start () {
@@ -19,13 +19,13 @@ public class SoiStauts : MonoBehaviour {
         {
             temp = change_s;
         }
-        if (GetPoint.waterpoint >= 250 && MinGetPoint.sunpoint >= 100)
+        if (GetPoint.waterpoint >= 150 && MinGetPoint.sunpoint >= 50)
         {
             change_s = 1;
             temp = change_s;
         }
 
-        if (GetPoint.waterpoint >= 450 && MinGetPoint.sunpoint >= 200)
+        if (GetPoint.waterpoint >= 350 && MinGetPoint.sunpoint >= 100)
         {
             change_s = 2;
             temp = change_s;
