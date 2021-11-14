@@ -28,15 +28,11 @@
 
 1. 물 아이콘과 해 아이콘을 모아, 토양이의 머리 위에 있는 식물을 **새싹 → 꽃 → 열매**로 키워가는 게입니다. <br>
 
-   🌱 토양이 성장 모습
+   🌱 토양이 성장 모습<br>
 
    ![새싹](./growgame/Assets/sprite/soil_shoot.png)➡![꽃](./growgame/Assets/sprite/soil_flower.png)➡![열매](./growgame/Assets/sprite/soil_fruit.png)
-
-
-
 <br>
-
-   🌱 햇빛, 물 아이콘
+   🌱 햇빛, 물 아이콘<br>
    ![햇빛 아이콘](./growgame/Assets/sprite/SunGage.png)       ![물아이콘](./growgame/Assets/sprite/WaterGage.png)
 
 <br>
