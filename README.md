@@ -112,13 +112,13 @@
 
 5.  기타
 
-   🌱 아이콘 차는 모습 <br>
+      🌱 아이콘 차는 모습 <br>
 
-   ![fill](./playscreen/fill.PNG)
+      ![fill](./playscreen/fill.PNG)
 
-   🌱 게임 화면 내 일시정지 버튼 및 홈 화면으로 돌아가는 버튼<br>
+      🌱 게임 화면 내 일시정지 버튼 및 홈 화면으로 돌아가는 버튼<br>
 
-   ![버튼](./playscreen/button.PNG)
+      ![버튼](./playscreen/button.PNG)
 
    
 
