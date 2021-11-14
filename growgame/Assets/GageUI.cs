@@ -47,12 +47,12 @@ public class GageUI : MonoBehaviour {
         Sun = MinGetPoint.sunpoint - suncount * 50;
         if (Water >= 100)
         {
-            this.Sungage.GetComponent<Image>().fillAmount = 1.0f;
+            this.Watergage.GetComponent<Image>().fillAmount = 1.0f;
         }
 
         if (Sun >= 50)
         {
-            this.Watergage.GetComponent<Image>().fillAmount = 1.0f;
+            this.Sungage.GetComponent<Image>().fillAmount = 1.0f;
         }
 
         this.Sungage.GetComponent<Image>().fillAmount = Sun / 50f;
