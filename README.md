@@ -12,8 +12,6 @@
 
 <br>
 
-<br>
-
 ### 2. 게임 설명서
 
 <hr>
@@ -32,17 +30,14 @@
 
    🌱 토양이 성장 모습
 
-![새싹](./growgame/Assets/sprite/soil_shoot.png)➡![꽃](./growgame/Assets/sprite/soil_flower.png)➡![열매](./growgame/Assets/sprite/soil_fruit.png)
+   ![새싹](./growgame/Assets/sprite/soil_shoot.png)➡![꽃](./growgame/Assets/sprite/soil_flower.png)➡![열매](./growgame/Assets/sprite/soil_fruit.png)
 
 
 
 <br>
 
-🌱 햇빛, 물 아이콘
-
-
-
-![햇빛 아이콘](./growgame/Assets/sprite/SunGage.png)       ![물아이콘](./growgame/Assets/sprite/WaterGage.png)
+   🌱 햇빛, 물 아이콘
+   ![햇빛 아이콘](./growgame/Assets/sprite/SunGage.png)       ![물아이콘](./growgame/Assets/sprite/WaterGage.png)
 
 <br>
 
