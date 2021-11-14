@@ -31,8 +31,11 @@
    🌱 토양이 성장 모습<br>
 
    ![새싹](./growgame/Assets/sprite/soil_shoot.png)➡![꽃](./growgame/Assets/sprite/soil_flower.png)➡![열매](./growgame/Assets/sprite/soil_fruit.png)
-<br>
+   
+   <br>
+   
    🌱 햇빛, 물 아이콘<br>
+   
    ![햇빛 아이콘](./growgame/Assets/sprite/SunGage.png)       ![물아이콘](./growgame/Assets/sprite/WaterGage.png)
 
 <br>
