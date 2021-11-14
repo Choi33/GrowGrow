@@ -98,13 +98,13 @@
 
    ⑴ 새싹 → 꽃 <br>
 
-    ![조건1](./playscreen/1.png)<br>
+    ![조건1](./playscreen/1.PNG)<br>
 
    
 
    ⑵ 꽃 → 열매<br>
 
-   ![조건2](./playscreen/2.png)
+   ![조건2](./playscreen/2.PNG)
 
    <br>
 
@@ -114,11 +114,11 @@
 
    🌱 아이콘 차는 모습 <br>
 
-   ![fill](./playscreen/fill.png)
+   ![fill](./playscreen/fill.PNG)
 
    🌱 게임 화면 내 일시정지 버튼 및 홈 화면으로 돌아가는 버튼<br>
 
-   ![버튼](./playscreen/button.png)
+   ![버튼](./playscreen/button.PNG)
 
    
 
